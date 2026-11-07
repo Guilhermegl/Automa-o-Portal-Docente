@@ -1,0 +1,33 @@
+AUTOMACAO PORTAL SENAI v2.1.10 - CORRECAO DE FLUXO (PESSOAL)
+
+PARA ABRIR: extraia o ZIP COMPLETO e clique 2 vezes em ABRIR PORTAL.exe.
+O EXE e um iniciador; precisa do Python 3.12 e das dependencias previamente instaladas.
+
+MUDANCAS
+* Na operacao Frequencia, o botao central e INICIAR CHAMADA.
+* O botao ja abre a janela e consulta os alunos automaticamente, sem salvar.
+* Em Simulacao, pergunte se deseja passar para Automatico antes da chamada.
+  Selecionar Automatico nao grava: ainda exige selecao e confirmacao final.
+* A data recuperada do historico da frequencia do Evento e sugerida se
+  for dos ultimos 14 dias. SEMPRE confirme a data mostrada antes do envio.
+* Se a tentativa falhar, a selecao de alunos fica visivel para conferencia;
+  os botoes de nova gravacao ficam inativos ate uma nova leitura.
+* Modulos de conteudo e escrita de frequencia NAO foram modificados.
+
+VALIDADO NO PORTAL SENAI AUTENTICADO EM 09/10/2026.
+Leitura e gravacao controlada foram conferidas nos 6 componentes do Evento
+995723, com releitura das 4 paginas e 35 matriculas apos cada envio. O teste
+preservou exatamente as presencas/faltas ja existentes.
+
+DADOS PESSOAIS
+Este ZIP traz uma copia restaurada do banco de 09/10/2026 as 10h03,
+mais os planos DOCX e arquivos de login criptografados ligados ao Windows.
+Se sua pasta atual possui registros mais recentes, NAO sobrescreva seu banco.
+Mantenha a instalacao atual INTACTA; este ZIP deve ser extraido em NOVA pasta.
+Para continuar com os dados mais recentes, mantenha copia integral da pasta
+_Sistema/data atual e copie-a para a nova instalacao SOMENTE depois de
+fechar ambos os programas e fazer backup. Nunca copie apenas o DB enquanto
+estiver aberto (o SQLite pode usar -wal e -shm).
+NAO COMPARTILHE ESTE ZIP COM OUTROS PROFESSORES: contem dados pessoais.
+
+VER VALIDACAO_V2110.txt para os testes locais e limitacoes.

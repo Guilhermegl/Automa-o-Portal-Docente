@@ -1,0 +1,22 @@
+VALIDACAO - v2.1.10, 09/10/2026
+- Py compileall: OK.
+- 181 testes aprovados, 3 ignorados. 5 modulos de GUI nao coletados (PySide6 ausente).
+- Banco SQLite local: PRAGMA integrity_check = ok.
+- 4 eventos, 6 planos, 399 aulas, 6 associacoes de plano.
+- Banco, settings.json, credenciais DPAPI e estado de sessao: bytes preservados da
+  copia recuperada v2.1.9.
+- Modulos content_write_session.py, content_write_worker.py, content_page.py,
+  audit.py e a rotina de escrita da frequencia: bytes preservados da v2.1.9.
+- Testes novos de contrato do fluxo da tela: aprovados, mas nao substituem GUI real.
+- O ABRIR PORTAL.exe fornecido e apenas um launcher PE Windows. Formato verificado,
+  mas nao foi aberto no Windows e depende do Python/Playwright/PySide6 instalados.
+- Portal SENAI real testado em 09/10/2026: login, leitura e paginacao nos 6
+  componentes do Evento 995723; 35 alunos e 4 paginas por componente.
+- Gravacao controlada testada em todos os 6 componentes: reenvio idempotente
+  dos estados existentes, 4 paginas por componente, seguido de releitura GET
+  e comparacao das 35 matriculas. Nenhuma presenca/falta foi alterada no teste.
+- Corrigida a classificacao incorreta da leitura GET como nao confiavel quando
+  o POST automatico da paginacao e bloqueado.
+- Corrigida a corrida do seletor de mes ao reabrir componentes na mesma sessao.
+- A resposta de gravacao agora e consumida antes de navegar/fechar o navegador.
+- Esta revisao conserta a UX de INICIAR CHAMADA e o sumico da lista apos erro.
